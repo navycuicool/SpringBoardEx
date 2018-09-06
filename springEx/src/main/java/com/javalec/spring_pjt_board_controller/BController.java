@@ -65,7 +65,6 @@ public class BController {
 	@RequestMapping("/reply_view")
 	public String reply_view(HttpServletRequest request, Model model) {
 		System.out.println("reply_view()");
-		
 		model.addAttribute("request",request);
 		command = new BReplyViewCommand();
 		command.execute(model);
